@@ -14,6 +14,7 @@ body {
   overflow: hidden;
 }
 
+/* Credits font and color */
 .wrapper {
   position: absolute;
   top: 100%;
@@ -22,13 +23,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: rgb(0, 255, 0);
+  opacity: 1;
 }
 
-.movie {
-  margin-bottom: 25px;
-  font-size: 50px;
-}
-
+/* Header font and color */
 .job {
   margin-top: 80px;
   margin-bottom: 16px;
@@ -37,13 +35,34 @@ body {
   color: magenta;
 }
 
+/* Each credit */
 .name {
   margin-bottom: 20px;
   font-size: 35px;
 }
 
-.topImg {
-  width: 300px;
-  height: 300px;
-  background-color: red;
+/* Intro Image */
+.introImg {
+  height: 500px;
+}
+
+/* Intro Text */
+.introText {
+  font: 300 30px/1 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: magenta;
+}
+
+/* Outro Image */
+.outroImg {
+  height: 500px;
+}
+
+/* Outro Text */
+.outroText {
+  font: 300 30px/1 'Open Sans Condensed', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: magenta;
 }
