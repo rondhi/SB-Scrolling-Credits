@@ -39,7 +39,7 @@ function getUrlParameters() {
 	const params = new URLSearchParams(window.location.search);                                               // Get URL parameters from browser                                        
 	const host = params.get('host') || '127.0.0.1';                                                           // URL parameter for Streamer.bot Websocket server host, default 127.0.0.1
 	const port = params.get('port') || 8080;                                                                  // URL parameter for Streamer.bot Websocket server port, default 8080     
-	const scheme = getBooleanParam('secure') ? 'ws' : 'wss'; // Scheme is for either ws or wss, default ws
+	const scheme = getBooleanParam('secure') ? 'wss' : 'ws'; // Scheme is for either ws or wss, default ws
     const endpoint = params.get('endpoint') || '/'; // Websocket server endpoint, default '/'
     const password = params.has('password') ? decodeBase64(params.get('password')) : undefined; //
 	const scrollingSpeed = parseInt(params.get('scrollingSpeedPercent'), 10) || 100;                          // URL Param for setting scrolling speed, default 100                     
